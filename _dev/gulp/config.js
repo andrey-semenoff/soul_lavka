@@ -58,7 +58,8 @@ module.exports = {
     vendorJS: {
                 src:[
                       './bower_components/jquery/dist/jquery.min.js',
-                      './bower_components/owl.carousel/dist/owl.carousel.min.js'
+                      './bower_components/owl.carousel/dist/owl.carousel.min.js',
+                      './bower_components/jquery-modal/jquery.modal.min.js'
                     ],
                 dest: './_build/js/vendor/'
               },
@@ -67,6 +68,7 @@ module.exports = {
                       './bower_components/normalize-css/normalize.css',
                       './bower_components/owl.carousel/dist/assets/owl.carousel.min.css',
                       './bower_components/font-awesome/css/font-awesome.min.css',
+                      './bower_components/jquery-modal/jquery.modal.min.css'
                     ],
                 dest: './_build/css/vendor/'
               },

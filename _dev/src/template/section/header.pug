@@ -1,3 +1,58 @@
 // ====== header ======= 
 header.header
-	|Header of frontend template
+	._container
+
+		// ====== menu-header =======
+		.menu-header
+
+				ul._row.menu-header__list
+					li.menu-header__item.menu-header__item_active
+						a.menu-header__link(href="#" title="") О нас
+					li.menu-header__item
+						a.menu-header__link(href="#" title="") Продукция
+					li.menu-header__item
+						a.menu-header__link(href="#" title="") Аренда декора
+					li.menu-header__item.menu-header__item_dark
+						a.menu-header__link(href="#" title="") New
+					li.menu-header__item.menu-header__item_light
+						a.menu-header__link(href="#" title="") Sale
+					li.menu-header__item.menu-header__item_right-side
+						a.menu-header__link(href="#" title="") Контакты
+					li.menu-header__item.menu-header__item_right-side
+						a.menu-header__link(href="#" title="") Личный кабинет
+
+		._row
+			// ====== contacts-header =======
+			.header__left
+				.contacts-header
+
+					form.form-search.form-search_header
+						input.form-search__input(type="text" name="f_name" placeholder="")
+
+					._row
+						.contacts-header-phones
+							ul.contacts-header-phones__list
+								li.contacts-header-phones__item
+									a.contacts-header-phones__link
+										span +38 048
+										span.contacts-header-phones__big 123 45 67
+
+						.contacts-header-adresses
+							ul.contacts-header-adresses__list
+								li.contacts-header-adresses__item
+									span.contacts-header-adresses__link(href="#" title="") Адрес: Бунина 22
+
+			// ====== basket =======
+			._row.header__right
+				.header-basket
+					.header-basket__content
+						p В Вашей корзинке
+						p.header-basket__amount нет товаров
+						img.header-basket__img.header-basket__img_kitten(src="img/kitten.png" alt="kitten")
+						img.header-basket__img.header-basket__img_basket(src="img/basket.png" alt="basket")
+
+
+		// ====== logo =======
+		.logo
+			a.logo__link(href="/" title="Home")
+				img.logo__img(src="img/logo.png" alt="logo")

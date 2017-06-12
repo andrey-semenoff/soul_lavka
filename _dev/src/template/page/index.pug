@@ -1,23 +1,48 @@
 extends ../main
 
 block content
-	|Content of index page
+	// ====== main content =======
+	main.main
 
-	// ====== owl-carousel ======= 
-	.owl-carousel(data-type="common")
+		// ====== carousel_new =======
+		.carousel.carousel_new
+			._container
+				.owl-carousel.owl-carousel_new(data-type="new")
 
-		.carousel__item 
-			img(src="img/spriteIcons.png")
-		.carousel__item
-			img(src="img/spriteIcons.png")
-		.carousel__item
-			img(src="img/spriteIcons.png")
-		.carousel__item
-			img(src="img/spriteIcons.png")
-		.carousel__item
-			img(src="img/spriteIcons.png")
+					.carousel__item
+						._row.carousel__item-inner
+							.carousel__item-left
+								.carousel__item-title
+									p сувениры, подарки, предметы интерьера
+									.carousel__item-mark New
+								.carousel__item-text Керамические горшочки для цветов в виде принцесс-лягушек станут отличным дополнением интерьера и красивым элементом домашнего декора
+							.carousel__item-right
+								.carousel__item-img-holder
+									img.carousel__item-img(src="img/photos/photo_new_1.jpg" alt="photo")
 
-	// ====== google-map ======= 
-	.google-map(onMouseLeave="document.querySelector('.google-map__overlay').style.pointerEvents=''")
-		.google-map__overlay(onClick="style.pointerEvents='none'")
-		iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d39900487.71448589!2d40.60944223142707!3d52.382522441872524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1482606480304" width="100%" height="375" frameborder="0" style="border:0" allowfullscreen)
+					.carousel__item
+						._row.carousel__item-inner
+							.carousel__item-left
+								.carousel__item-title
+									p сувениры, подарки, предметы интерьера
+									.carousel__item-mark New
+								.carousel__item-text Керамические горшочки для цветов в виде принцесс-лягушек станут отличным дополнением интерьера и красивым элементом домашнего декора
+							.carousel__item-right
+								.carousel__item-img-holder
+									img.carousel__item-img(src="img/photos/photo_new_1.jpg" alt="photo")
+
+		// ====== carousel_category =======
+		.carousel.carousel_category
+			.owl-carousel.owl-carousel_category(data-type="category")
+
+				.carousel__item
+					.carousel__item-img-holder
+						img.carousel__item-img(src="img/category/category-1.jpg")
+					.carousel__item-title
+
+
+
+	//// ====== google-map =======
+	//.google-map(onMouseLeave="document.querySelector('.google-map__overlay').style.pointerEvents=''")
+	//	.google-map__overlay(onClick="style.pointerEvents='none'")
+	//	iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d39900487.71448589!2d40.60944223142707!3d52.382522441872524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1482606480304" width="100%" height="375" frameborder="0" style="border:0" allowfullscreen)
