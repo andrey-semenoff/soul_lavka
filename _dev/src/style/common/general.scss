@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 ._container {
-  max-width: $container-width;
+  width: $container-width;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -104,7 +104,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*! --- standart title --- */
 .title {
-
+  font: 60px $Chickpeas;
+  color: #383838;
+  text-align: center;
 }
 
 /*! --- owl-carousel --- */

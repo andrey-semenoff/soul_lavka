@@ -2,17 +2,11 @@ doctype html
 html(lang="ru-RU")
 	head
 		include section/_head
-	body
-		//- | Блок для svg-спрайта
-		//- div(style="display: none")
-			include common/_spriteIcons.svg
-
 		include common/mixins
+	body
+		._container
 
-		//- | блок .wrapper нужен для sticky-footer
-		//- .wrapper
-
-		include section/header
+			include section/header
 
 		block content
 

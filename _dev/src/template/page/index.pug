@@ -4,17 +4,18 @@ block content
 	// ====== main content =======
 	main.main
 
+
 		// ====== carousel_new =======
 		.carousel.carousel_new
 			._container
-				.owl-carousel.owl-carousel_new(data-type="new")
+				.owl-carousel(data-type="category_new")
 
 					.carousel__item
 						._row.carousel__item-inner
 							.carousel__item-left
 								.carousel__item-title
 									p сувениры, подарки, предметы интерьера
-									.carousel__item-mark New
+									.title.carousel__item-mark New
 								.carousel__item-text Керамические горшочки для цветов в виде принцесс-лягушек станут отличным дополнением интерьера и красивым элементом домашнего декора
 							.carousel__item-right
 								.carousel__item-img-holder
@@ -25,21 +26,262 @@ block content
 							.carousel__item-left
 								.carousel__item-title
 									p сувениры, подарки, предметы интерьера
-									.carousel__item-mark New
+									.title.carousel__item-mark New
 								.carousel__item-text Керамические горшочки для цветов в виде принцесс-лягушек станут отличным дополнением интерьера и красивым элементом домашнего декора
 							.carousel__item-right
 								.carousel__item-img-holder
 									img.carousel__item-img(src="img/photos/photo_new_1.jpg" alt="photo")
+
 
 		// ====== carousel_category =======
 		.carousel.carousel_category
-			.owl-carousel.owl-carousel_category(data-type="category")
+			._container
+				.owl-carousel(data-type="category")
 
-				.carousel__item
-					.carousel__item-img-holder
-						img.carousel__item-img(src="img/category/category-1.jpg")
-					.carousel__item-title
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/category/category_1.jpg")
+						.carousel__item-title
+							span категория
 
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/category/category_2.jpg")
+						.carousel__item-title
+							span категория
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/category/category_3.jpg")
+						.carousel__item-title
+							span категория
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/category/category_1.jpg")
+						.carousel__item-title
+							span категория
+
+
+		// ====== carousel_videos =======
+		.carousel.carousel_videos
+			._container
+				.owl-carousel(data-type="videos")
+
+					.carousel__item
+						._row.carousel__item-inner
+							.carousel__item-left
+								.carousel__item-video-holder
+									iframe.carousel__item-video(src="https://www.youtube.com/embed/g4f4WZt6ZJg" frameborder="0" allowfullscreen)
+							.carousel__item-right
+								.carousel__item-title
+									p сувениры, подарки, предметы интерьера
+									.title.carousel__item-mark New
+								.carousel__item-text Керамические горшочки для цветов в виде принцесс-лягушек станут отличным дополнением интерьера и красивым элементом домашнего декора
+
+
+		// ====== carousel_products_new =======
+		.carousel.carousel-products.carousel-products_new
+			._container
+
+				.title.carousel-products__title Новинки
+
+				.owl-carousel(data-type="products_new")
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/products/product-1.jpg" alt="product")
+						.carousel__item-desc
+							.carousel__item-title Фотоаппарат ретро
+							.carousel__item-price 500
+								span грн.
+							button.carousel__item-button(type="button") Купить
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/products/product-2.jpg" alt="product")
+						.carousel__item-desc
+							.carousel__item-title Чашка "Лепесток"
+							.carousel__item-price 100
+								span грн.
+							button.carousel__item-button(type="button") Купить
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/products/product-3.jpg" alt="product")
+						.carousel__item-desc
+							.carousel__item-title Магнолия бутон
+							.carousel__item-price 75
+								span грн.
+							button.carousel__item-button(type="button") Купить
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/products/product-4.jpg" alt="product")
+						.carousel__item-desc
+							.carousel__item-title Набор бокалов
+							.carousel__item-price 1050
+								span грн.
+							button.carousel__item-button(type="button") Купить
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/products/product-3.jpg" alt="product")
+						.carousel__item-desc
+							.carousel__item-title Магнолия бутон
+							.carousel__item-price 75
+								span грн.
+							button.carousel__item-button(type="button") Купить
+
+
+		// ====== carousel_products_sale =======
+		.carousel.carousel-products.carousel-products_sale
+			._container
+
+				.title.carousel-products__title Скидки
+
+				.owl-carousel(data-type="products_sale")
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/products/product-4.jpg" alt="product")
+						.carousel__item-desc
+							.carousel__item-title Фотоаппарат ретро
+							.carousel__item-price 500
+								span грн.
+							button.carousel__item-button(type="button") Купить
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/products/product-5.jpg" alt="product")
+						.carousel__item-desc
+							.carousel__item-title Чашка "Лепесток"
+							.carousel__item-price 100
+								span грн.
+							button.carousel__item-button(type="button") Купить
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/products/product-1.jpg" alt="product")
+						.carousel__item-desc
+							.carousel__item-title Магнолия бутон
+							.carousel__item-price 75
+								span грн.
+							button.carousel__item-button(type="button") Купить
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/products/product-6.jpg" alt="product")
+						.carousel__item-desc
+							.carousel__item-title Набор бокалов
+							.carousel__item-price 1050
+								span грн.
+							button.carousel__item-button(type="button") Купить
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/products/product-3.jpg" alt="product")
+						.carousel__item-desc
+							.carousel__item-title Магнолия бутон
+							.carousel__item-price 75
+								span грн.
+							button.carousel__item-button(type="button") Купить
+
+
+		// ====== carousel_products_sale =======
+		.carousel.carousel-products.carousel-products_offers
+			._container
+
+				.title.carousel-products__title Акции
+
+				.owl-carousel(data-type="products_offers")
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/products/product-3.jpg" alt="product")
+						.carousel__item-desc
+							.carousel__item-title Фотоаппарат ретро
+							.carousel__item-price 500
+								span грн.
+							button.carousel__item-button(type="button") Купить
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/products/product-7.jpg" alt="product")
+						.carousel__item-desc
+							.carousel__item-title Чашка "Лепесток"
+							.carousel__item-price 100
+								span грн.
+							button.carousel__item-button(type="button") Купить
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/products/product-8.jpg" alt="product")
+						.carousel__item-desc
+							.carousel__item-title Магнолия бутон
+							.carousel__item-price 75
+								span грн.
+							button.carousel__item-button(type="button") Купить
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/products/product-9.jpg" alt="product")
+						.carousel__item-desc
+							.carousel__item-title Набор бокалов
+							.carousel__item-price 1050
+								span грн.
+							button.carousel__item-button(type="button") Купить
+
+					.carousel__item
+						.carousel__item-img-holder
+							img.carousel__item-img(src="img/products/product-5.jpg" alt="product")
+						.carousel__item-desc
+							.carousel__item-title Магнолия бутон
+							.carousel__item-price 75
+								span грн.
+							button.carousel__item-button(type="button") Купить
+
+
+		// ====== main-news =======
+		.news.main-news
+			._container
+
+				.title.main-news__title Новости
+
+				ul.news__list
+					li.news__item
+						a.news__link(href="#" title="")
+							.news__img-holder
+								img.news__img(src="img/news/news-1.jpg" alt="news")
+							.news__date 22 января 2017
+							.news__title Примеры удачного компонования предметов в единую композицию
+							.news__excerpt Мы намерены раскрыть для вас секрет удачного декоративного оформления любой поверхности в комнате, будь-то полка стеллажа, столешница консоли, комода или журнального столика.
+
+					li.news__item
+						a.news__link(href="#" title="")
+							.news__img-holder
+								img.news__img(src="img/news/news-1.jpg" alt="news")
+							.news__date 22 января 2017
+							.news__title Примеры удачного компонования предметов в единую композицию
+							.news__excerpt Мы намерены раскрыть для вас секрет удачного декоративного оформления любой поверхности в комнате, будь-то полка стеллажа, столешница консоли, комода или журнального столика.
+
+				a.button.news__button(type="button") все новости
+
+
+		// ====== main-about =======
+		.main-about
+
+			.main-about__topline
+
+			._container
+
+				.title.main-about__title О нас
+
+				.main-about__text
+					p Концепция развития поддерживает культурный пул лояльных изданий, используя опыт предыдущих кампаний. Рекламное сообщество, пренебрегая деталями, обуславливает эксклюзивный охват аудитории. Агентская комиссия, как следует из вышесказанного, выражена наиболее полно. Такое понимание ситуации восходит к Эл Райс, при этом сервисная стратегия откровенно цинична.
+					p Ценовая стратегия по-прежнему востребована. Анализ зарубежного опыта, следовательно, регулярно отталкивает медиамикс, опираясь на опыт западных коллег. Партисипативное планирование индуцирует product placement, отвоевывая рыночный сегмент. Такое понимание ситуации восходит к Эл Райс, при этом охват аудитории изменяет имидж предприятия. Целевая аудитория, как принято считать, масштабирует фактор коммуникации. Партисипативное планирование без оглядки на авторитеты сознательно продуцирует конвергентный план размещения.
+
+				.title.main-about__slogan Дарите друг другу добро :)
 
 
 	//// ====== google-map =======

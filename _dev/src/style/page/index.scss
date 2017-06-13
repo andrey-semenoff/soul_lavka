@@ -2,6 +2,32 @@
 
 /*! ===== carousel_new ===== */
 .carousel_new {
+  .owl-nav {
+    position: absolute;
+    left: 120px;
+    bottom: 10px;
+    text-align: center;
+  }
+
+  .owl-prev,
+  .owl-next {
+    position: static;
+    display: inline-block;
+    top: auto;
+    transform: none;
+  }
+
+  .owl-prev {
+    left: auto;
+  }
+
+  .owl-next {
+    right: auto;
+    margin-left: 60px;
+  }
+
+}
+.carousel_new, .carousel_videos {
   height: 500px;
   background-color: $powder;
 
@@ -20,26 +46,25 @@
   .carousel__item-left {
     float: left;
     width: 30%;
-    padding: 150px 92px 0 15px;
+    padding: 150px 45px 0 15px;
   }
 
   .carousel__item-title {
     position: relative;
     padding: 60px 80px 30px 40px;
-    border: 2px solid #383838;
+    background: url(../img/bg-title_black.png) 0 0 no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
     text-transform: uppercase;
     line-height: 1.5rem;
+  }
 
-    .carousel__item-mark {
-      position: absolute;
-      top: -40px;
-      left: 45px;
-      padding: 0 15px;
-      font: 70px $Chickpeas;
-      color: #383838;
-      text-transform: capitalize;
-      background-color: $powder;
-    }
+  .carousel__item-mark {
+    position: absolute;
+    top: -40px;
+    left: 45px;
+    padding: 0 15px;
+    text-transform: capitalize;
   }
 
   .carousel__item-text {
@@ -78,7 +103,299 @@
   margin-top: 140px;
   height: 550px;
 
+  .owl-nav {
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .owl-prev,
+  .owl-next {
+    position: static;
+    display: inline-block;
+    top: auto;
+    transform: none;
+  }
+
+  .owl-prev {
+    left: auto;
+  }
+
+  .owl-next {
+    right: auto;
+    margin-left: 60px;
+  }
+
   .carousel__item {
+    position: relative;
+    height: 490px;
     padding: 0 15px;
   }
+
+  .carousel__item-img-holder {
+    position: relative;
+    height: 460px;
+  }
+
+  .carousel__item-img {
+    @include center-translate();
+  }
+
+  .carousel__item-title {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 214px;
+    min-height: 60px;
+    background-color: #fae8da;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    span {
+      @include center-translate();
+    }
+  }
 }
+
+/*! ===== carousel_new ===== */
+.carousel_videos {
+  margin-top: 40px;
+  height: auto;
+  background: #004322 url(../img/bg_green.jpg) center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  .carousel__item {
+    padding: 40px 0;
+  }
+
+  .carousel__item-left {
+    width: 70%;
+    padding: 0 10px;
+  }
+
+  .carousel__item-right {
+    width: 30%;
+    padding: 135px 0 0 60px;
+  }
+
+  .carousel__item-video-holder {
+    @include aspect-ratio(16, 9);
+  }
+
+  .carousel__item-video {
+
+  }
+
+  .carousel__item-mark {
+    background: none;
+    color: #fff;
+  }
+  
+  .carousel__item-text {
+    color: #fff;
+  }
+  
+  .carousel__item-title {
+    color: #fff;
+    border-color: #fff;
+    padding-right: 70px;
+    border: none;
+    background: url(../img/bg-title-holder.png) 0 0 no-repeat;
+  }
+}
+
+
+
+/*! ===== carousel_products_new ===== */
+.carousel-products {
+  margin-top: 40px;
+
+  .owl-carousel {
+    margin-top: 15px;
+  }
+
+  .owl-nav {
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .owl-prev,
+  .owl-next {
+    position: static;
+    display: inline-block;
+    top: auto;
+    transform: none;
+  }
+
+  .owl-prev {
+    left: auto;
+  }
+
+  .owl-next {
+    right: auto;
+    margin-left: 60px;
+  }
+
+  .carousel__item {
+
+    &:nth-of-type(1) {
+      padding-left: 15px;
+    }
+  }
+
+  .carousel__item-desc {
+    text-align: center;
+  }
+
+  .carousel__item-title {
+    margin-top: 10px;
+  }
+
+  .carousel__item-price {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+
+    span {
+      margin-left: 5px;
+      font-weight: normal;
+      font-size: 16px;
+    }
+  }
+
+  .carousel__item-button {
+    width: 100px;
+    height: 30px;
+    margin: 10px 0 0 20px;
+    background-color: $powder;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    
+    &:hover {
+      cursor: pointer;
+      background-color: darken($powder, 10%);
+    }
+  }
+
+}
+
+
+/*! ===== main-news ===== */
+.main-news {
+  margin-top: 50px;
+
+  ._container {
+    padding: 0;
+  }
+}
+
+.news__list {
+  font-size: 0;
+
+}
+
+.news__item {
+  display: inline-block;
+  width: 50%;
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+.news__link {
+  color: #383838;
+}
+
+.news__img-holder {
+  max-height: 420px;
+  overflow: hidden;
+}
+
+.news__date {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.news__title {
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.news__excerpt {
+  margin-top: 15px;
+  line-height: 1.2rem;
+}
+
+
+.news__button {
+  display: block;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  margin: 55px auto 0;
+  background-color: #94683e;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: darken(#94683e, 10%);
+  }
+}
+
+/*! ===== main-about ===== */
+.main-about {
+  margin-top: 65px;
+  padding-bottom: 10px;
+}
+
+.main-about__topline {
+  height: 200px;
+  background: url(../img/bg_about-line.jpg) center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.main-about__title {
+  margin-top: 65px;
+}
+
+.main-about__text {
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 1.2rem;
+  color: #5b5d61;
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+.main-about__slogan {
+  position: relative;
+  margin-top: 130px;
+  font-weight: bold;
+  color: #888;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 245px;
+    height: 322px;
+    top: -90px;
+    left: 4%;
+    background: url(../img/kitten.png) 0 0 no-repeat;
+    -webkit-background-size: 70%;
+    background-size: 70%;
+  }
+}
+

@@ -1,8 +1,156 @@
 /*! ===== footer styles ===== */
 
 footer.footer {
-  // position: relative;
-  // height: $footer-height;
-	
-	background-color: #ccc;
+	padding: 110px 0 25px;
+	background-color: #5b5d61;
+	color: #fff;
 }
+
+.menu-footer {
+	float: left;
+	width: 500px;
+}
+
+.menu-footer__list {
+	font-size: 0;
+}
+
+.menu-footer__item {
+	display: inline-block;
+	width: 50%;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.menu-footer__link {
+	color: #fff;
+	border-bottom: 1px solid transparent;
+
+	&:hover {
+		border-bottom-color: #fff;
+	}
+}
+
+
+/*! ===== contacts-footer ===== */
+.contacts-footer {
+	float: left;
+	width: 460px;
+	padding-left: 100px;
+}
+
+.contacts-footer__list {
+
+}
+
+.contacts-footer__item {
+	margin-top: 10px;
+}
+
+.contacts-footer__link {
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	border-bottom: 1px solid transparent;
+
+	&:hover {
+		border-bottom-color: #fff;
+	}
+}
+
+.contacts-footer__big {
+	margin-left: 5px;
+	font-size: 17px;
+}
+
+.social-footer__item {
+	display: inline-block;
+	margin: 20px 10px 0 0;
+}
+
+.social-footer__link {
+	color: #fff;
+
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
+/*! ===== contacts-subscribe ===== */
+.contacts-subscribe {
+	float: left;
+}
+
+.contacts-subscribe__title {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.contacts-subscribe__form {
+	position: relative;
+	width: 185px;
+	margin-top: 15px;
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 10px;
+		border: 1px solid #d0c1c1;
+		border-top: 0;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		//z-index: -1;
+	}
+}
+
+.contacts-subscribe__input {
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding: 5px 10px;
+	border: none;
+	background: none;
+	color: #fff;
+	font-size: 12px;
+}
+
+.contacts-subscribe__button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 7px 10px;
+	color: #fff;
+	background: none;
+	border: none;
+
+	&:hover {
+		cursor: pointer;
+		opacity: 0.5;
+	}
+}
+
+
+/*! ===== copyright ===== */
+.copyright {
+	margin-top: 65px;
+	font-size: 12px;
+}
+
+.copyright__left {
+	float: left;
+}
+
+.copyright__right {
+	float: right;
+	text-align: right;
+}
+
+.copyright__link {
+	text-decoration: underline;
+	color: #fff;
+}
+
