@@ -1,10 +1,34 @@
 /*! ===== footer styles ===== */
 
 footer.footer {
+	position: relative;
+	margin-top: 220px;
 	padding: 110px 0 25px;
 	background-color: #5b5d61;
 	color: #fff;
 }
+
+
+.main-about__slogan {
+	position: absolute;
+	top: -85px;
+	left: 250px;
+	font-weight: bold;
+	color: #888;
+
+	&:after {
+		content: '';
+		position: absolute;
+		width: 245px;
+		height: 322px;
+		top: -90px;
+		left: -23%;
+		background: url(../img/kitten.png) 0 0 no-repeat;
+		-webkit-background-size: 70%;
+		background-size: 70%;
+	}
+}
+
 
 .menu-footer {
 	float: left;
@@ -90,6 +114,7 @@ footer.footer {
 	position: relative;
 	width: 185px;
 	margin-top: 15px;
+	z-index: 1;
 
 	&:after {
 		content: '';
@@ -102,7 +127,7 @@ footer.footer {
 		border-top: 0;
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
-		//z-index: -1;
+		z-index: -1;
 	}
 }
 
@@ -111,7 +136,7 @@ footer.footer {
 	width: 100%;
 	height: 30px;
 	line-height: 30px;
-	padding: 5px 10px;
+	padding: 5px 45px 5px 10px;
 	border: none;
 	background: none;
 	color: #fff;
