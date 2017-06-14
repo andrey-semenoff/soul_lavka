@@ -1,17 +1,41 @@
 /*! ===== footer styles ===== */
 
 footer.footer {
-	position: relative;
 	margin-top: 220px;
 	padding: 110px 0 25px;
 	background-color: #5b5d61;
 	color: #fff;
+
+	._container {
+		position: relative;
+	}
 }
 
 
 .slogan {
 	position: absolute;
-	top: -85px;
+	top: -105px;
+	left: 205px;
+	font: 27px $Lobster;
+	color: #fff;
+	text-shadow: 3px 3px #4c457a;
+
+	&:after {
+		content: '';
+		position: absolute;
+		width: 180px;
+		height: 265px;
+		top: -190px;
+		left: -65%;
+		background: url(../img/kitten.png) 0 0 no-repeat;
+		-webkit-background-size: 100%;
+		background-size: 100%;
+	}
+}
+
+.slogan_chickpeas {
+	position: absolute;
+	top: -200px;
 	left: 250px;
 	font-weight: bold;
 	color: #888;

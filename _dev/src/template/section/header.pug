@@ -56,3 +56,16 @@ header.header
 	.logo
 		a.logo__link(href="/" title="Home")
 			img.logo__img(src="img/logo.png" alt="logo")
+
+
+	// ====== breadcrumbs =======
+	if( breadcrumbs !== undefined )
+		- var last = breadcrumbs.length - 1
+		.breadcrumbs
+			ul.breadcrumbs__list
+				each item, i in breadcrumbs
+					li.breadcrumbs__item
+						if( i < last )
+							a.breadcrumbs__link(href= item.link)= item.title
+						else
+							span.breadcrumbs__link.breadcrumbs__link_active= item.title
