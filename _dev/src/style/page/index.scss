@@ -100,8 +100,8 @@
 }
 
 
-/*! ===== carousel_new ===== */
-.carousel_category {
+/*! ===== carousel_catalog ===== */
+.carousel_catalog {
   margin-top: 140px;
   height: 550px;
 
@@ -137,6 +137,7 @@
   .carousel__item-img-holder {
     position: relative;
     height: 460px;
+    overflow: hidden;
   }
 
   .carousel__item-img {
@@ -244,45 +245,10 @@
 
   .carousel__item {
 
+    color: #383838;
+
     &:nth-of-type(1) {
       padding-left: 15px;
-    }
-  }
-
-  .carousel__item-desc {
-    text-align: center;
-  }
-
-  .carousel__item-title {
-    margin-top: 10px;
-  }
-
-  .carousel__item-price {
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
-
-    span {
-      margin-left: 5px;
-      font-weight: normal;
-      font-size: 16px;
-    }
-  }
-
-  .carousel__item-button {
-    width: 100px;
-    height: 30px;
-    margin: 10px 0 0 20px;
-    background-color: $powder;
-    border: none;
-    font-size: 13px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    
-    &:hover {
-      cursor: pointer;
-      background-color: darken($powder, 10%);
     }
   }
 

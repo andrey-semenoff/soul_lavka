@@ -1,0 +1,67 @@
+extends ../main
+
+block vars
+	-
+		var body_class = "gallery-page"
+		var breadcrumbs = [
+												{
+													title: "Главная",
+													link: "/"
+												},
+												{
+													title: "Галлерея"
+												}
+											]
+
+block content
+	// ====== main content =======
+	main.main
+
+		// ====== gallery =======
+		.gallery
+			._container
+
+				.gallery-top
+					.gallery-top__img-holder
+						img.gallery-top__img(src="img/gallery/gallery_1.jpg")
+					.gallery-top__text
+						p Оригинальная фотозона стала неотъемлемым атрибутом каждого мероприятия в наше время. Ведь приятно и смешно рассматривать «живые» и оригинальные фото с праздника, нежели банальные снимки возле памятников и городских достопримечательностей.
+						p Фото зону подбирают исходя из Ваших желаний и финансовых возможностей. Так же важным аспектом выбора фотозоны является общая концепция торжества.
+
+
+				ul.gallery__list
+
+					li.gallery__item
+						.gallery__img-holder
+							img.gallery__img(src="img/gallery/gallery_1.jpg")
+							a.gallery__link(href="/gallery-single.html" title="")
+								.gallery__title
+									span Название альбома 1
+
+					li.gallery__item
+						.gallery__img-holder
+							img.gallery__img(src="img/gallery/gallery_2.jpg")
+							a.gallery__link(href="/gallery-single.html" title="")
+								.gallery__title
+									span Название альбома 2
+
+					li.gallery__item
+						.gallery__img-holder
+							img.gallery__img(src="img/gallery/gallery_3.jpg")
+							a.gallery__link(href="/gallery-single.html" title="")
+								.gallery__title
+									span Название альбома 3
+
+					li.gallery__item
+						.gallery__img-holder
+							img.gallery__img(src="img/gallery/gallery_1.jpg")
+							a.gallery__link(href="/gallery-single.html" title="")
+								.gallery__title
+									span Название альбома 4
+
+					li.gallery__item
+						.gallery__img-holder
+							img.gallery__img(src="img/gallery/gallery_2.jpg")
+							a.gallery__link(href="/gallery-single.html" title="")
+								.gallery__title
+									span Название альбома 5

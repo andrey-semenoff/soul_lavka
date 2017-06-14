@@ -3,6 +3,7 @@
 @include font-face('FontAwesome', '../fonts');
 @include font-face('Lobster', '../fonts');
 @include font-face('Chickpeas', '../fonts');
+@include font-face('ArtNouveau-Cafe', '../fonts');
 
 $container-width: 1284px;
 $body-color: #fff;
@@ -13,8 +14,10 @@ $powder: #fae8da;
 $grey: #5b5d61;
 $violet: #49436b;
 
+$FontAwesome: "FontAwesome";
 $Lobster: "Lobster", Arial, Helvetica, sans-serif;
 $Chickpeas: "Chickpeas", Arial, Helvetica, sans-serif;
+$ArtNouveau-Cafe: "ArtNouveau-Cafe", Arial, Helvetica, sans-serif;
 
 *, *:before, *:after {
   margin: 0;

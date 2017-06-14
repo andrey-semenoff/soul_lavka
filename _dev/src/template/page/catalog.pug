@@ -1,0 +1,65 @@
+extends ../main
+
+block vars
+	-
+		var body_class = "news-page"
+		var breadcrumbs = [
+												{
+													title: "Главная",
+													link: "/"
+												},
+												{
+													title: "Каталоги"
+												}
+											]
+
+block content
+	// ====== main content =======
+	main.main
+
+		// ====== catalog =======
+		.catalog
+			._container
+
+				ul.catalog__list
+					li.catalog__item
+						a.catalog__link(href="/catalog-single.html" title="")
+							.catalog__img-holder
+								img.catalog__img(src="img/catalog/catalog_1.jpg")
+							.catalog__title
+								span категория 1
+
+					li.catalog__item
+						a.catalog__link(href="/catalog-single.html" title="")
+							.catalog__img-holder
+								img.catalog__img(src="img/catalog/catalog_1.jpg")
+							.catalog__title
+								span категория 2
+
+					li.catalog__item
+						a.catalog__link(href="/catalog-single.html" title="")
+							.catalog__img-holder
+								img.catalog__img(src="img/catalog/catalog_1.jpg")
+							.catalog__title
+								span категория 3
+
+					li.catalog__item
+						a.catalog__link(href="/catalog-single.html" title="")
+							.catalog__img-holder
+								img.catalog__img(src="img/catalog/catalog_1.jpg")
+							.catalog__title
+								span категория 4
+
+					li.catalog__item
+						a.catalog__link(href="/catalog-single.html" title="")
+							.catalog__img-holder
+								img.catalog__img(src="img/catalog/catalog_1.jpg")
+							.catalog__title
+								span категория 5
+
+					li.catalog__item
+						a.catalog__link(href="/catalog-single.html" title="")
+							.catalog__img-holder
+								img.catalog__img(src="img/catalog/catalog_1.jpg")
+							.catalog__title
+								span категория 6

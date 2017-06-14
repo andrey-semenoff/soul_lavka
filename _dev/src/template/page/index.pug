@@ -37,34 +37,38 @@ block content
 									img.carousel__item-img(src="img/photos/photo_new_1.jpg" alt="photo")
 
 
-		// ====== carousel_category =======
-		.carousel.carousel_category
+		// ====== carousel_catalog =======
+		.carousel.carousel_catalog
 			._container
-				.owl-carousel(data-type="category")
+				.owl-carousel(data-type="catalog")
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/category/category_1.jpg")
-						.carousel__item-title
-							span категория
+						a.catalog__link(href="/catalog-single.html" title="")
+							.catalog__img-holder
+								img.catalog__img(src="img/catalog/catalog_1.jpg")
+							.catalog__title
+								span категория 1
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/category/category_2.jpg")
-						.carousel__item-title
-							span категория
+						a.catalog__link(href="/catalog-single.html" title="")
+							.catalog__img-holder
+								img.catalog__img(src="img/catalog/catalog_1.jpg")
+							.catalog__title
+								span категория 2
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/category/category_3.jpg")
-						.carousel__item-title
-							span категория
+						a.catalog__link(href="/catalog-single.html" title="")
+							.catalog__img-holder
+								img.catalog__img(src="img/catalog/catalog_1.jpg")
+							.catalog__title
+								span категория 3
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/category/category_1.jpg")
-						.carousel__item-title
-							span категория
+						a.catalog__link(href="/catalog-single.html" title="")
+							.catalog__img-holder
+								img.catalog__img(src="img/catalog/catalog_1.jpg")
+							.catalog__title
+								span категория 4
 
 
 		// ====== carousel_videos =======
@@ -93,49 +97,49 @@ block content
 				.owl-carousel(data-type="products_new")
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/products/product-1.jpg" alt="product")
-						.carousel__item-desc
-							.carousel__item-title Фотоаппарат ретро
-							.carousel__item-price 500
+						a.products__img-holder(href="#" title="")
+							img.products__img(src="img/products/product-1.jpg" alt="product")
+						.products__desc
+							a.products__title(href="#" title="") Фотоаппарат ретро
+							.products__price 500
 								span грн.
-							button.carousel__item-button(type="button") Купить
+							button.products__button(type="button") Купить
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/products/product-2.jpg" alt="product")
-						.carousel__item-desc
-							.carousel__item-title Чашка "Лепесток"
-							.carousel__item-price 100
+						a.products__img-holder(href="#" title="")
+							img.products__img(src="img/products/product-2.jpg" alt="product")
+						.products__desc
+							a.products__title(href="#" title="") Чашка "Лепесток"
+							.products__price 100
 								span грн.
-							button.carousel__item-button(type="button") Купить
+							button.products__button(type="button") Купить
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/products/product-3.jpg" alt="product")
-						.carousel__item-desc
-							.carousel__item-title Магнолия бутон
-							.carousel__item-price 75
+						a.products__img-holder(href="#" title="")
+							img.products__img(src="img/products/product-3.jpg" alt="product")
+						.products__desc
+							a.products__title(href="#" title="") Магнолия бутон
+							.products__price 75
 								span грн.
-							button.carousel__item-button(type="button") Купить
+							button.products__button(type="button") Купить
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/products/product-4.jpg" alt="product")
-						.carousel__item-desc
-							.carousel__item-title Набор бокалов
-							.carousel__item-price 1050
+						a.products__img-holder(href="#" title="")
+							img.products__img(src="img/products/product-4.jpg" alt="product")
+						.products__desc
+							a.products__title(href="#" title="") Набор бокалов
+							.products__price 1050
 								span грн.
-							button.carousel__item-button(type="button") Купить
+							button.products__button(type="button") Купить
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/products/product-3.jpg" alt="product")
-						.carousel__item-desc
-							.carousel__item-title Магнолия бутон
-							.carousel__item-price 75
+						a.products__img-holder(href="#" title="")
+							img.products__img(src="img/products/product-3.jpg" alt="product")
+						.products__desc
+							a.products__title(href="#" title="") Магнолия бутон
+							.products__price 75
 								span грн.
-							button.carousel__item-button(type="button") Купить
+							button.products__button(type="button") Купить
 
 
 		// ====== carousel_products_sale =======
@@ -147,49 +151,49 @@ block content
 				.owl-carousel(data-type="products_sale")
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/products/product-4.jpg" alt="product")
-						.carousel__item-desc
-							.carousel__item-title Фотоаппарат ретро
-							.carousel__item-price 500
+						a.products__img-holder(href="#" title="")
+							img.products__img(src="img/products/product-4.jpg" alt="product")
+						.products__desc
+							a.products__title(href="#" title="") Фотоаппарат ретро
+							.products__price 500
 								span грн.
-							button.carousel__item-button(type="button") Купить
+							button.products__button(type="button") Купить
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/products/product-5.jpg" alt="product")
-						.carousel__item-desc
-							.carousel__item-title Чашка "Лепесток"
-							.carousel__item-price 100
+						a.products__img-holder(href="#" title="")
+							img.products__img(src="img/products/product-5.jpg" alt="product")
+						.products__desc
+							a.products__title(href="#" title="") Чашка "Лепесток"
+							.products__price 100
 								span грн.
-							button.carousel__item-button(type="button") Купить
+							button.products__button(type="button") Купить
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/products/product-1.jpg" alt="product")
-						.carousel__item-desc
-							.carousel__item-title Магнолия бутон
-							.carousel__item-price 75
+						a.products__img-holder(href="#" title="")
+							img.products__img(src="img/products/product-1.jpg" alt="product")
+						.products__desc
+							a.products__title(href="#" title="") Магнолия бутон
+							.products__price 75
 								span грн.
-							button.carousel__item-button(type="button") Купить
+							button.products__button(type="button") Купить
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/products/product-6.jpg" alt="product")
-						.carousel__item-desc
-							.carousel__item-title Набор бокалов
-							.carousel__item-price 1050
+						a.products__img-holder(href="#" title="")
+							img.products__img(src="img/products/product-6.jpg" alt="product")
+						.products__desc
+							a.products__title(href="#" title="") Набор бокалов
+							.products__price 1050
 								span грн.
-							button.carousel__item-button(type="button") Купить
+							button.products__button(type="button") Купить
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/products/product-3.jpg" alt="product")
-						.carousel__item-desc
-							.carousel__item-title Магнолия бутон
-							.carousel__item-price 75
+						a.products__img-holder(href="#" title="")
+							img.products__img(src="img/products/product-3.jpg" alt="product")
+						.products__desc
+							a.products__title(href="#" title="") Магнолия бутон
+							.products__price 75
 								span грн.
-							button.carousel__item-button(type="button") Купить
+							button.products__button(type="button") Купить
 
 
 		// ====== carousel_products_sale =======
@@ -201,49 +205,49 @@ block content
 				.owl-carousel(data-type="products_offers")
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/products/product-3.jpg" alt="product")
-						.carousel__item-desc
-							.carousel__item-title Фотоаппарат ретро
-							.carousel__item-price 500
+						a.products__img-holder(href="#" title="")
+							img.products__img(src="img/products/product-3.jpg" alt="product")
+						.products__desc
+							a.products__title(href="#" title="") Фотоаппарат ретро
+							.products__price 500
 								span грн.
-							button.carousel__item-button(type="button") Купить
+							button.products__button(type="button") Купить
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/products/product-7.jpg" alt="product")
-						.carousel__item-desc
-							.carousel__item-title Чашка "Лепесток"
-							.carousel__item-price 100
+						a.products__img-holder(href="#" title="")
+							img.products__img(src="img/products/product-7.jpg" alt="product")
+						.products__desc
+							a.products__title(href="#" title="") Чашка "Лепесток"
+							.products__price 100
 								span грн.
-							button.carousel__item-button(type="button") Купить
+							button.products__button(type="button") Купить
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/products/product-8.jpg" alt="product")
-						.carousel__item-desc
-							.carousel__item-title Магнолия бутон
-							.carousel__item-price 75
+						a.products__img-holder(href="#" title="")
+							img.products__img(src="img/products/product-8.jpg" alt="product")
+						.products__desc
+							a.products__title(href="#" title="") Магнолия бутон
+							.products__price 75
 								span грн.
-							button.carousel__item-button(type="button") Купить
+							button.products__button(type="button") Купить
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/products/product-9.jpg" alt="product")
-						.carousel__item-desc
-							.carousel__item-title Набор бокалов
-							.carousel__item-price 1050
+						a.products__img-holder(href="#" title="")
+							img.products__img(src="img/products/product-9.jpg" alt="product")
+						.products__desc
+							a.products__title(href="#" title="") Набор бокалов
+							.products__price 1050
 								span грн.
-							button.carousel__item-button(type="button") Купить
+							button.products__button(type="button") Купить
 
 					.carousel__item
-						.carousel__item-img-holder
-							img.carousel__item-img(src="img/products/product-5.jpg" alt="product")
-						.carousel__item-desc
-							.carousel__item-title Магнолия бутон
-							.carousel__item-price 75
+						a.products__img-holder(href="#" title="")
+							img.products__img(src="img/products/product-5.jpg" alt="product")
+						.products__desc
+							a.products__title(href="#" title="") Магнолия бутон
+							.products__price 75
 								span грн.
-							button.carousel__item-button(type="button") Купить
+							button.products__button(type="button") Купить
 
 
 		// ====== main-news =======
@@ -273,7 +277,7 @@ block content
 
 
 		// ====== main-about =======
-		.main-about
+		.main-about#main-about
 
 			.main-about__topline
 
