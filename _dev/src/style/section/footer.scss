@@ -9,7 +9,7 @@ footer.footer {
 }
 
 
-.main-about__slogan {
+.slogan {
 	position: absolute;
 	top: -85px;
 	left: 250px;
@@ -19,13 +19,13 @@ footer.footer {
 	&:after {
 		content: '';
 		position: absolute;
-		width: 245px;
-		height: 322px;
-		top: -90px;
+		width: 180px;
+		height: 265px;
+		top: -95px;
 		left: -23%;
 		background: url(../img/kitten.png) 0 0 no-repeat;
-		-webkit-background-size: 70%;
-		background-size: 70%;
+		-webkit-background-size: 100%;
+		background-size: 100%;
 	}
 }
 

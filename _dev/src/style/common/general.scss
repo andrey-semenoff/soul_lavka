@@ -45,11 +45,16 @@ body {
 //     url(../img/clients/kaspersky_color.jpg),
 // }
 
-a, a:hover, a:focus {
+a {
   display: inline-block;
   text-decoration: none;
-  cursor: pointer;
+
+  &:hover, &:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
+
 
 img {
   max-width: 100%;
@@ -148,7 +153,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /*! --- google-map --- */
-
 .google-map {
   position: relative;
 }
@@ -160,4 +164,40 @@ h1, h2, h3, h4, h5, h6, p {
   bottom: 0;
   right: 0;
 }
+
+
+/*! --- breadcrumbs --- */
+.breadcrumbs {
+
+}
+
+.breadcrumbs__list {
+  font-size: 0;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 12px;
+
+  &:not(:nth-of-type(1)) {
+    &:before {
+      content: '\2192';
+      position: absolute;
+      left: -20px;
+      top: 35%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.breadcrumbs__link {
+  color: $grey;
+
+  &_active {
+    color: #94683e;
+  }
+}
+
 

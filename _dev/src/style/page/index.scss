@@ -310,15 +310,16 @@
 }
 
 .news__list {
+  margin-top: -45px;
   font-size: 0;
-
 }
 
 .news__item {
   display: inline-block;
   width: 50%;
-  font-size: 14px;
+  margin-top: 65px;
   padding: 0 15px;
+  font-size: 14px;
 }
 
 .news__link {

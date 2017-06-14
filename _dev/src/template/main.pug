@@ -1,9 +1,13 @@
 doctype html
 html(lang="ru-RU")
+
+	block vars
+
 	head
 		include section/_head
 		include common/mixins
-	body
+	body(class= body_class)
+
 		._container
 
 			include section/header
