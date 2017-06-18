@@ -1,0 +1,78 @@
+extends ../main
+
+block vars
+	-
+		var body_class = "contacts-page"
+		var breadcrumbs = [
+												{
+													title: "Главная",
+													link: "/"
+												},
+												{
+													title: "Контакты"
+												}
+											]
+
+block content
+	// ====== main content =======
+	main.main
+		._container
+
+			// ====== contacts =======
+			.contacts
+				._container
+					
+					.title.contacts__title Контакты
+
+					._row
+
+						.contacts__left
+
+							.contacts__group
+								.contacts__group-caption Наш адрес:
+								ul.contacts__group-list
+									li.contacts__group-item
+										span ул. Бунина, 27
+
+							.contacts__group
+								.contacts__group-caption Телефоны:
+								ul.contacts__group-list
+									li.contacts__group-item
+										a.contacts__group-link(href="tel:+380930234130") +38 093 023 41 30
+									li.contacts__group-item
+										a.contacts__group-link(href="tel:+380674877162") +38 067 4877162
+
+							.contacts__group
+								.contacts__group-caption Email:
+								ul.contacts__group-list
+									li.contacts__group-item
+										a.contacts__group-link(href="mailto:soulavka@ukr.net") soulavka@ukr.net
+
+							// ====== contacts__form =======
+							form.contacts__form#form_feedback
+
+								.contacts__form-title Обратная связь
+
+								label.contacts__label.input-holder(for="f_name")
+									span.contacts__label-text Имя 
+										span.contacts__label-text_red *
+									input.contacts__input(type="text" name="f_name" id="f_name")
+								
+								label.contacts__label.input-holder(for="f_email")
+									span.contacts__label-text E-mail 
+										span.contacts__label-text_red *
+									input.contacts__input(type="email" name="f_email" id="f_email")
+								
+								label.contacts__label(for="f_text")
+									span.contacts__label-text Текст сообщения 
+										span.contacts__label-text_red *
+									textarea.contacts__textarea(name="f_text" id="f_text")
+
+								button.button.contacts__form-button(type="submit") отправить
+
+						.contacts__right
+										
+							// ====== google-map =======
+							.google-map(onMouseLeave="document.querySelector('.google-map__overlay').style.pointerEvents=''")
+								.google-map__overlay(onClick="style.pointerEvents='none'")
+								iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1171.2508369278573!2d30.736770452696074!3d46.481040123495056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6319993a7a139%3A0x35711273d3fb0520!2z0LLRg9C70LjRhtGPINCR0YPQvdGW0L3QsCwgMjcsINCe0LTQtdGB0LAsINCe0LTQtdGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsA!5e0!3m2!1sru!2sua!4v1497815778172" width="100%" height="375" frameborder="0" style="border:0" allowfullscreen)

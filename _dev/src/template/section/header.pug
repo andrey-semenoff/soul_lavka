@@ -1,71 +1,72 @@
 // ====== header ======= 
 header.header
+	._container
 
-	// ====== menu-header =======
-	.menu-header
+		// ====== menu-header =======
+		.menu-header
 
-			ul._row.menu-header__list
-				li.menu-header__item.menu-header__item_active
-					a.menu-header__link(href="#main-about" title="") О нас
-				li.menu-header__item
-					a.menu-header__link(href="#" title="") Продукция
-				li.menu-header__item
-					a.menu-header__link(href="/catalog-single.html" title="") Аренда декора
-				li.menu-header__item.menu-header__item_dark
-					a.menu-header__link(href="#" title="") New
-				li.menu-header__item.menu-header__item_light
-					a.menu-header__link(href="#" title="") Sale
-				li.menu-header__item.menu-header__item_right-side
-					a.menu-header__link(href="/contacts.html" title="") Контакты
-				li.menu-header__item.menu-header__item_right-side
-					a.menu-header__link(href="#" title="") Личный кабинет
+				ul._row.menu-header__list
+					li.menu-header__item.menu-header__item_active
+						a.menu-header__link(href="#main-about" title="") О нас
+					li.menu-header__item
+						a.menu-header__link(href="#" title="") Продукция
+					li.menu-header__item
+						a.menu-header__link(href="/catalog-single.html" title="") Аренда декора
+					li.menu-header__item.menu-header__item_dark
+						a.menu-header__link(href="#" title="") New
+					li.menu-header__item.menu-header__item_light
+						a.menu-header__link(href="#" title="") Sale
+					li.menu-header__item.menu-header__item_right-side
+						a.menu-header__link(href="/contacts.html" title="") Контакты
+					li.menu-header__item.menu-header__item_right-side
+						a.menu-header__link(href="#" title="") Личный кабинет
 
-	._row
-		// ====== contacts-header =======
-		.header__left
-			.contacts-header
+		._row
+			// ====== contacts-header =======
+			.header__left
+				.contacts-header
 
-				form.form-search.form-search_header
-					input.form-search__input(type="text" name="f_name" placeholder="")
-					button.form-search__button(type="submit")
+					form.form-search.form-search_header.input-holder
+						input.form-search__input(type="text" name="f_name" placeholder="")
+						button.form-search__button(type="submit")
 
-				._row
-					.contacts-header-phones
-						ul.contacts-header-phones__list
-							li.contacts-header-phones__item
-								a.contacts-header-phones__link
-									span +38 048
-									span.contacts-header-phones__big 123 45 67
+					._row
+						.contacts-header-phones
+							ul.contacts-header-phones__list
+								li.contacts-header-phones__item
+									a.contacts-header-phones__link
+										span +38 093
+										span.contacts-header-phones__big 023 41 30
 
-					.contacts-header-adresses
-						ul.contacts-header-adresses__list
-							li.contacts-header-adresses__item
-								span.contacts-header-adresses__link(href="#" title="") Адрес: Бунина 22
+						.contacts-header-adresses
+							ul.contacts-header-adresses__list
+								li.contacts-header-adresses__item
+									span.contacts-header-adresses__link(href="#" title="") Адрес: Бунина 27
 
-		// ====== basket =======
-		._row.header__right
-			.header-basket
-				.header-basket__content
-					p В Вашей корзинке
-					p.header-basket__amount нет товаров
-					img.header-basket__img.header-basket__img_kitten(src="img/kitten.png" alt="kitten")
-					img.header-basket__img.header-basket__img_basket(src="img/basket.png" alt="basket")
-
-
-	// ====== logo =======
-	.logo
-		a.logo__link(href="/" title="Home")
-			img.logo__img(src="img/logo.png" alt="logo")
+			// ====== basket =======
+			._row.header__right
+				.header-basket
+					.header-basket__content
+						p В Вашей корзинке
+						p.header-basket__amount нет товаров
+						img.header-basket__img.header-basket__img_kitten(src="img/kitten.png" alt="kitten")
+						img.header-basket__img.header-basket__img_basket(src="img/basket.png" alt="basket")
 
 
-	// ====== breadcrumbs =======
-	if( breadcrumbs !== undefined )
-		- var last = breadcrumbs.length - 1
-		.breadcrumbs
-			ul.breadcrumbs__list
-				each item, i in breadcrumbs
-					li.breadcrumbs__item
-						if( i < last )
-							a.breadcrumbs__link(href= item.link)= item.title
-						else
-							span.breadcrumbs__link.breadcrumbs__link_active= item.title
+		// ====== logo =======
+		.logo
+			a.logo__link(href="/" title="Home")
+				img.logo__img(src="img/logo.png" alt="logo")
+
+
+		// ====== breadcrumbs =======
+		if( breadcrumbs !== undefined )
+			- var last = breadcrumbs.length - 1
+			.breadcrumbs
+				ul.breadcrumbs__list
+					each item, i in breadcrumbs
+						li.breadcrumbs__item
+							if( i < last )
+								a.breadcrumbs__link(href= item.link)= item.title
+							else
+								span.breadcrumbs__link.breadcrumbs__link_active= item.title

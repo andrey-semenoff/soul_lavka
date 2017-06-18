@@ -32,6 +32,8 @@ html {
 }
 
 body {
+  width: $container-width;
+  margin: auto;
   font-family: $body-font;
   font-size: 100%;
   color: $body-font-color;
@@ -79,9 +81,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 ._container {
-  width: $container-width;
+  max-width: $container-width;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 ._row {
@@ -104,9 +105,17 @@ h1, h2, h3, h4, h5, h6, p {
 .button {
   display: inline-block;
   border: none;
+  margin: 10px 0 0 20px;
+  background-color: $powder;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 
   &:hover {
     cursor: pointer;
+    background-color: darken($powder, 10%);
   }
 }
 
@@ -115,6 +124,30 @@ h1, h2, h3, h4, h5, h6, p {
   font: 60px $Chickpeas;
   color: #383838;
   text-align: center;
+}
+
+/*! --- input-holder --- */
+.input-holder {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    border: 1px solid #d0c1c1;
+    border-top: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: -1;
+  }
+
+  input {
+    border: none;
+    background: none;
+  }
 }
 
 /*! --- owl-carousel --- */
