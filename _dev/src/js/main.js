@@ -72,6 +72,32 @@ $(function () {
 
   // owl-carousel products_offers
   $(".owl-carousel[data-type='products_offers']").owlCarousel({
+    items: 4,
+    loop: true,
+    smartSpeed: 1000,
+    autoHeight: true,
+    nav: true,
+    navText: [
+      "<span class='fa fa-chevron-left owl-nav_arrow'></span>",
+      "<span class='fa fa-chevron-right owl-nav_arrow'></span>"
+    ]
+  });
+
+  // owl-carousel products_same
+  $(".owl-carousel[data-type='products_same']").owlCarousel({
+    items: 4,
+    loop: true,
+    smartSpeed: 1000,
+    autoHeight: true,
+    nav: true,
+    navText: [
+      "<span class='fa fa-chevron-left owl-nav_arrow'></span>",
+      "<span class='fa fa-chevron-right owl-nav_arrow'></span>"
+    ]
+  });
+
+  // owl-carousel products_viewed
+  $(".owl-carousel[data-type='products_viewed']").owlCarousel({
   	items: 4,
   	loop: true,
   	smartSpeed: 1000,

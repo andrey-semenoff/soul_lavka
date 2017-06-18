@@ -1,0 +1,202 @@
+extends ../main
+
+block vars
+	-
+		var body_class = "product-page"
+		var breadcrumbs = [
+												{
+													title: "Главная",
+													link: "/"
+												},
+												{
+													title: "Каталог 1",
+													link: "/catalog-single.html"
+												},
+												{
+													title: "Набор бокалов"
+												}
+											]
+
+block content
+	// ====== main content =======
+	main.main
+
+		// ====== product =======
+		.product
+			._container
+				._row
+
+					.product__photo-holder
+						img.product__photo(src="img/products/product-5_full.jpg", alt="")
+
+					.product__info
+						.product__name Набор бокалов HIGLAND PURPLE 5139263
+						
+						._row.product-params
+							
+							ul.product-params__names
+								li.product-params__item Материал:
+								li.product-params__item Размер:
+								li.product-params__item Артикул:
+								li.product-params__item Объем:
+								li.product-params__item Производство:
+
+							ul.product-params__values
+								li.product-params__item стекло
+								li.product-params__item высота 16 см
+								li.product-params__item 5139263
+								li.product-params__item 250 мл
+								li.product-params__item Великобритания
+
+						form.product__form#form_order
+							input(type="hidden" name="f_product" value="123")
+							label.product__label(for="f_amount")
+								span.product__label-text Количество:
+								span.input-holder
+									input.product__input(type="text" name="f_amount" id="f_amount" value="1")
+								span.product__label-text шт.
+
+							.product__price
+								span.product__price-num 1050
+								span.product__price-suffix грн.
+
+								.product__price-sale 998 грн. от 5 шт.
+
+							button.button.product__button(type="submit") купить
+
+						ul.product-photos__list
+							li.product-photos__item
+								a.product-photos__link(href="#")
+									img.product-photos__img(src="img/products/product-1.jpg", alt="")
+							li.product-photos__item
+								a.product-photos__link(href="#")
+									img.product-photos__img(src="img/products/product-2.jpg", alt="")
+							li.product-photos__item
+								a.product-photos__link(href="#")
+									img.product-photos__img(src="img/products/product-3.jpg", alt="")
+	
+				.product-desc
+					.product-desc__title Характеристики
+					.product-desc__content
+						p Материал, из которого изготовлено данное изделие, подвергается переработке. Ознакомьтесь с правилами переработки отходов в Вашей стране и узнайте, существуют ли перерабатывающие предприятия в Вашем регионе.
+						p Без добавления ртути, кадмия или свинца.
+
+
+
+				// ====== carousel_products_same =======
+				.carousel.carousel-products.carousel-products_same
+					._container
+
+						.title.carousel-products__title Похожие товары
+
+						.owl-carousel(data-type="products_same")
+
+							.carousel__item
+								a.products__img-holder(href="#" title="")
+									img.products__img(src="img/products/product-1.jpg" alt="product")
+								.products__desc
+									a.products__title(href="#" title="") Фотоаппарат ретро
+									.products__price 500
+										span грн.
+									button.products__button(type="button") Купить
+
+							.carousel__item
+								a.products__img-holder(href="#" title="")
+									img.products__img(src="img/products/product-2.jpg" alt="product")
+								.products__desc
+									a.products__title(href="#" title="") Чашка "Лепесток"
+									.products__price 100
+										span грн.
+									button.products__button(type="button") Купить
+
+							.carousel__item
+								a.products__img-holder(href="#" title="")
+									img.products__img(src="img/products/product-3.jpg" alt="product")
+								.products__desc
+									a.products__title(href="#" title="") Магнолия бутон
+									.products__price 75
+										span грн.
+									button.products__button(type="button") Купить
+
+							.carousel__item
+								a.products__img-holder(href="#" title="")
+									img.products__img(src="img/products/product-4.jpg" alt="product")
+								.products__desc
+									a.products__title(href="#" title="") Набор бокалов
+									.products__price 1050
+										span грн.
+									button.products__button(type="button") Купить
+
+							.carousel__item
+								a.products__img-holder(href="#" title="")
+									img.products__img(src="img/products/product-3.jpg" alt="product")
+								.products__desc
+									a.products__title(href="#" title="") Магнолия бутон
+									.products__price 75
+										span грн.
+									button.products__button(type="button") Купить
+
+
+
+
+
+				// ====== carousel_products_viewed =======
+				.carousel.carousel-products.carousel-products_viewed
+					._container
+
+						.title.carousel-products__title Вы также смотрели
+
+						.owl-carousel(data-type="products_viewed")
+
+							.carousel__item
+								a.products__img-holder(href="#" title="")
+									img.products__img(src="img/products/product-1.jpg" alt="product")
+								.products__desc
+									a.products__title(href="#" title="") Фотоаппарат ретро
+									.products__price 500
+										span грн.
+									button.products__button(type="button") Купить
+
+							.carousel__item
+								a.products__img-holder(href="#" title="")
+									img.products__img(src="img/products/product-2.jpg" alt="product")
+								.products__desc
+									a.products__title(href="#" title="") Чашка "Лепесток"
+									.products__price 100
+										span грн.
+									button.products__button(type="button") Купить
+
+							.carousel__item
+								a.products__img-holder(href="#" title="")
+									img.products__img(src="img/products/product-3.jpg" alt="product")
+								.products__desc
+									a.products__title(href="#" title="") Магнолия бутон
+									.products__price 75
+										span грн.
+									button.products__button(type="button") Купить
+
+							.carousel__item
+								a.products__img-holder(href="#" title="")
+									img.products__img(src="img/products/product-4.jpg" alt="product")
+								.products__desc
+									a.products__title(href="#" title="") Набор бокалов
+									.products__price 1050
+										span грн.
+									button.products__button(type="button") Купить
+
+							.carousel__item
+								a.products__img-holder(href="#" title="")
+									img.products__img(src="img/products/product-3.jpg" alt="product")
+								.products__desc
+									a.products__title(href="#" title="") Магнолия бутон
+									.products__price 75
+										span грн.
+									button.products__button(type="button") Купить
+
+
+
+
+
+
+
+
