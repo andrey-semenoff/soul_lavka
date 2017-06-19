@@ -153,6 +153,32 @@ $(function () {
     }
   });
 
+	// Кнопка далее в корзине
+  $(".basket__form-button").on("click", function (e) {
+    e.preventDefault();
+    var $this = $(this),
+        action = $this.data("action"),
+        $group = $this.parent(),
+        $groups = $group.siblings();
+
+    if( action == 'next' ) {
+      $group.hide();
+      $groups.show();
+    } else {
+      var $msgbox = $(".modal.msgbox");
+
+      $msgbox.on($.modal.BLOCK, function(e) {
+        $('body').css({
+          'overflow-y': 'scroll'
+        });
+      })
+      .modal({
+        fadeDuration: 500
+      });
+
+    }
+  });
+  
 	//
 
 });

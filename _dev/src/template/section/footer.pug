@@ -1,115 +1,124 @@
-// ====== footer ======= 
+// ====== footer =======
 footer.footer
 
-	._container
+  ._container
 
-		.title.slogan Дарите друг другу добро
-			span.slogan__smile :)
+    .title.slogan Дарите друг другу добро
+      span.slogan__smile :)
 
-		._row
+    ._row
 
-			// ====== menu-footer =======
-			.menu-footer
+      // ====== menu-footer =======
+      .menu-footer
 
-				ul._row.menu-footer__list
-					li.menu-footer__item
-						a.menu-footer__link(href="#" title="") О нас
-					li.menu-footer__item
-						a.menu-footer__link(href="#" title="") Продукция
-					li.menu-footer__item
-						a.menu-footer__link(href="#" title="") Аренда декора
-					li.menu-footer__item
-						a.menu-footer__link(href="#" title="") New
-					li.menu-footer__item
-						a.menu-footer__link(href="#" title="") Sale
-					li.menu-footer__item
-						a.menu-footer__link(href="#" title="") Контакты
-					li.menu-footer__item
-						a.menu-footer__link(href="#" title="") Личный кабинет
+        ul._row.menu-footer__list
+          li.menu-footer__item
+            a.menu-footer__link(href="#" title="") О нас
+          li.menu-footer__item
+            a.menu-footer__link(href="#" title="") Продукция
+          li.menu-footer__item
+            a.menu-footer__link(href="#" title="") Аренда декора
+          li.menu-footer__item
+            a.menu-footer__link(href="#" title="") New
+          li.menu-footer__item
+            a.menu-footer__link(href="#" title="") Sale
+          li.menu-footer__item
+            a.menu-footer__link(href="#" title="") Контакты
+          li.menu-footer__item
+            a.menu-footer__link(href="#" title="") Личный кабинет
 
-			// ====== contacts-footer =======
-			.contacts-footer
-				ul.contacts-footer__list
-					li.contacts-footer__item
-						a.contacts-footer__link
-							span +38 093
-							span.contacts-footer__big 023 41 30
+      // ====== contacts-footer =======
+      .contacts-footer
+        ul.contacts-footer__list
+          li.contacts-footer__item
+            a.contacts-footer__link
+              span +38 093
+              span.contacts-footer__big 023 41 30
 
-				.social-footer
-					ul.social-footer__list
-						li.social-footer__item
-							a.social-footer__link(href="#" title="")
-								span.fa.fa-facebook
-						li.social-footer__item
-							a.social-footer__link(href="#" title="")
-								span.fa.fa-vk
+        .social-footer
+          ul.social-footer__list
+            li.social-footer__item
+              a.social-footer__link(href="#" title="")
+                span.fa.fa-facebook
+            li.social-footer__item
+              a.social-footer__link(href="#" title="")
+                span.fa.fa-vk
 
-			// ====== contacts-subscribe =======
-			.contacts-subscribe
-				.contacts-subscribe__title Подписка на рассылку
-				form.contacts-subscribe__form.input-holder
-					input.contacts-subscribe__input(type="email" name="f_email" placeholder="Введите e-mail")
-					button.contacts-subscribe__button(type="submit") OK
+      // ====== contacts-subscribe =======
+      .contacts-subscribe
+        .contacts-subscribe__title Подписка на рассылку
+        form.contacts-subscribe__form.input-holder
+          input.contacts-subscribe__input(type="email" name="f_email" placeholder="Введите e-mail")
+          button.contacts-subscribe__button(type="submit") OK
 
-		._row.copyright
-				.copyright__left &copy; 2014 Все права защищены.
-				.copyright__right
-					a.copyright__link(href="http://skylogic.com.ua" title="skylogic.com.ua") Разработка сайта
+    ._row.copyright
+        .copyright__left &copy; 2014 Все права защищены.
+        .copyright__right
+          a.copyright__link(href="http://skylogic.com.ua" title="skylogic.com.ua") Разработка сайта
 
 
 // ====== modals =======
 
 // ====== modal basket =======
 .modal.basket
-	.basket__title Корзина
+  .modal-title.basket__title Корзина
 
-	.basket__content
+  .modal-content.basket__content
 
-		ul.basket__list
+    ul.basket__list
 
-			li._row.basket__item
-				.basket__img-holder
-					img.basket__img(src="img/products/product-1.jpg")
-				.basket__item-info
-					.basket__item-name Магнолия бутон
-					.basket__item-amount
-						form.basket__form
-							input(type="hidden" name="f_product" value="123")
-							label.product__label(for="f_amount")
-								span.product__label-text Количество:
-								span.input-holder
-									input.product__input(type="text" name="f_amount" id="f_amount" value="1")
-								span.product__label-text шт.
-				.basket__item-sum 26 грн.
+      li._row.basket__item
+        .basket__img-holder
+          img.basket__img(src="img/products/product-1.jpg")
+        .basket__item-info
+          .basket__item-name Магнолия бутон
+          .basket__item-amount
+            form.basket__form
+              input(type="hidden" name="f_product" value="123")
+              label.product__label(for="f_amount")
+                span.product__label-text Количество:
+                span.input-holder
+                  input.product__input(type="text" name="f_amount" id="f_amount" value="1")
+                span.product__label-text шт.
+        .basket__item-sum 26 грн.
 
-			li._row.basket__item
-				.basket__img-holder
-					img.basket__img(src="img/products/product-2.jpg")
-				.basket__item-info
-					.basket__item-name Магнолия бутон
-					.basket__item-amount
-						form.basket__form
-							input(type="hidden" name="f_product" value="123")
-							label.product__label(for="f_amount")
-								span.product__label-text Количество:
-								span.input-holder
-									input.product__input(type="text" name="f_amount" id="f_amount" value="1")
-								span.product__label-text шт.
-				.basket__item-sum 26 грн.
+      li._row.basket__item
+        .basket__img-holder
+          img.basket__img(src="img/products/product-2.jpg")
+        .basket__item-info
+          .basket__item-name Магнолия бутон
+          .basket__item-amount
+            form.basket__form
+              input(type="hidden" name="f_product" value="123")
+              label.product__label(for="f_amount")
+                span.product__label-text Количество:
+                span.input-holder
+                  input.product__input(type="text" name="f_amount" id="f_amount" value="1")
+                span.product__label-text шт.
+        .basket__item-sum 26 грн.
 
-		.basket__amount Итого: 26 грн.
+    .basket__amount Итого: 26 грн.
 
-		.basket__button-holder
-			a.button.basket__button(href="/basket.html") Оформить заказ
+    .basket__button-holder
+      a.button.basket__button(href="/basket.html") Оформить заказ
 
-		.basket__button-holder
-			a.basket__link.basket__link_go(href="#") Продолжить покупки
+    .basket__button-holder
+      a.basket__link.basket__link_go(href="#") Продолжить покупки
+
+// ====== modal msg =======
+.modal.msgbox
+  .modal-title.msgbox__title Спасибо!
+  .modal-content.msgbox__content
+    p Ваш заказ принят
+    p Не забывайте дарить друг другу добро:)
+
+
 // ====== scripts =======
-// Start Google analytics 
+// Start Google analytics
 //script.
-// End Google analytics 
+// End Google analytics
 
-// Yandex.Metrika counter 
+// Yandex.Metrika counter
 //script(type="text/javascript").
 //noscript
-// /Yandex.Metrika counter 
+// /Yandex.Metrika counter

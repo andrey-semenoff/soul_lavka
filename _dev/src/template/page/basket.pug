@@ -73,27 +73,55 @@ block content
 
                       form.basket__form#form_order(novalidate)
 
-                        label.basket__label.input-holder(for="f_name")
-                          .basket__label-text ФИО
-                            span.basket__label-text_red *
-                          input.basket__input(type="text" name="f_name" id="f_name")
+                        // Group 1
+                        .basket__form-group.basket__form-group_1
+                          label.basket__label.input-holder(for="f_name")
+                            .basket__label-text ФИО
+                              span.basket__label-text_red *
+                            input.basket__input(type="text" name="f_name" id="f_name")
 
-                        label.basket__label.input-holder(for="f_email")
-                          .basket__label-text E-mail
-                            span.basket__label-text_red *
-                          input.basket__input(type="email" name="f_email" id="f_email")
+                          label.basket__label.input-holder(for="f_email")
+                            .basket__label-text E-mail
+                              span.basket__label-text_red *
+                            input.basket__input(type="email" name="f_email" id="f_email")
 
-                        label.basket__label.input-holder(for="f_comment")
-                          .basket__label-text Комментарий к заказу
-                          input.basket__input(type="text" name="f_comment" id="f_comment")
+                          label.basket__label.input-holder(for="f_comment")
+                            .basket__label-text Комментарий к заказу
+                            input.basket__input(type="text" name="f_comment" id="f_comment")
 
-                        label.basket__label.basket__label_chbox
-                          span.filters__label-text
-                            .icon.icon-checkbox_false
-                            span.filters__label-name Не звоните мне для подтверждения заказа
-                          input.filters__input(type="checkbox" name="f_callback")
+                          label.basket__label.basket__label_chbox
+                            span.filters__label-text
+                              .icon.icon-checkbox_false
+                              span.filters__label-name Не звоните мне для подтверждения заказа
+                            input.filters__input(type="checkbox" name="f_callback")
 
-                        button.button.basket__form-button(type="submit") далее
+                          button.button.basket__form-button(type="button" data-action="next") далее
+
+                        // Group 2
+                        .basket__form-group.basket__form-group_2
+                          label.basket__label.input-holder(for="f_address")
+                            .basket__label-text Адрес
+                              span.basket__label-text_red *
+                            input.basket__input(type="text" name="f_address" id="f_address")
+
+                          label.basket__label(for="f_delivery")
+                            .basket__label-text Способ доставки
+                              span.basket__label-text_red *
+                            select.basket__select(name="f_delivery" id="f_delivery")
+                              option.basket__option(value="urkpost") Укрпочта
+                              option.basket__option(value="novapost") Новая почта
+                              option.basket__option(value="intime") Интайм
+
+                          label.basket__label(for="f_delivery")
+                            .basket__label-text Способ оплаты
+                              span.basket__label-text_red *
+                            select.basket__select(name="f_delivery" id="f_delivery")
+                              option.basket__option(value="nal") Наложенный платёж
+                              option.basket__option(value="beznal") Безначиная оплата
+                              option.basket__option(value="privat24") Оплата на карточку Приват
+
+
+                          button.button.basket__form-button(type="submit") оформить заказ
 
                     button.tabs__button(href="#" title="История заказов") Новый пользователь
 

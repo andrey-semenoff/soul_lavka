@@ -75,7 +75,8 @@ fieldset {
   padding: 0;
 }
 
-input:focus {
+input:focus,
+select:focus {
   outline: none;
 }
 
@@ -109,6 +110,7 @@ h1, h2, h3, h4, h5, h6, p {
 .button {
   display: inline-block;
   border: none;
+  padding: 10px 20px;
   margin-top: 15px;
   background-color: $powder;
   border: none;
@@ -241,3 +243,39 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
+/*! ===== modal ===== */
+.blocker {
+  background-color: rgba(#382717, 0.7);
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 900px;
+  padding: 0;
+  border-radius: 0;
+}
+
+.modal a.close-modal {
+  @extend .icon;
+  @extend .icon-close;
+  top: 15px;
+  right: 15px;
+}
+
+
+.modal-title {
+  background-color: #ffe7dc;
+  text-align: center;
+  padding: 10px 15px;
+  font: 28px $Lobster;
+  color: $grey;
+  border-bottom: 7px solid #ff954f;
+}
+
+.modal-content {
+  padding: 15px;
+}

@@ -88,9 +88,6 @@
 }
 
 .basket__button {
-  width: 200px;
-  height: 40px;
-  line-height: 40px;
   margin-top: 35px;
   color: #383838;
   font-size: 14px;
@@ -108,7 +105,6 @@
   }
 }
 
-
 .user_new {
 
 }
@@ -117,6 +113,14 @@
   .tabs__button {
     left: 50%;
   }
+}
+
+.basket__form-group {
+
+}
+
+.basket__form-group_2 {
+  display: none;
 }
 
 .basket__label {
@@ -145,25 +149,22 @@
 }
 
 .basket__form-button {
-  width: 100px;
-  height: 30px;
-  line-height: 30px;
   margin-top: 30px;
 }
 
+.basket__select {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #d0c1c1;
+  border-radius: 5px;
+}
 
 /*! ===== basket_modal ===== */
 .basket_modal {
-  padding: 0;
   padding-bottom: 35px;
 
   .basket__title {
-    background-color: #ffe7dc;
-    text-align: center;
-    padding: 10px 15px;
-    font: 28px $Lobster;
-    color: $grey;
-    border-bottom: 7px solid #ff954f;
+
   }
 
   .basket__content {
@@ -175,4 +176,5 @@
   }
 
 }
+
 

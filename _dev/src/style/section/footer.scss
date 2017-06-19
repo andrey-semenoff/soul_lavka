@@ -190,25 +190,22 @@ footer.footer {
 }
 
 
-/*! ===== modal ===== */
-.blocker {
-	background-color: rgba(#382717, 0.7);
-}
+/*! ===== msgbox ===== */
+.msgbox {
+	width: 536px;
+	font: 25px $Chickpeas;
+	text-align: center;
 
-.modal {
-	display: none;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	max-width: 900px;
-	border-radius: 0;
-}
+	&__title {
+		font: 30px $Chickpeas;
+	}
 
-.modal a.close-modal {
-	@extend .icon;
-	@extend .icon-close;
-	top: 15px;
-	right: 15px;
-}
+	&__content {
+		padding: 45px 15px;
+	}
 
+	p:last-child {
+		margin-top: 15px;
+		font-size: 25px;
+	}
+}
