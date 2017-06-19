@@ -4,3 +4,160 @@
 .cabinet {
 
 }
+
+.tabs {
+  margin-top: 100px;
+}
+
+.tabs__list {
+  position: relative;
+}
+
+.tabs__item {
+
+  &_active {
+    border: 3px solid #fae8da;
+
+    .tabs-item__content {
+      position: relative;
+      display: block;
+    }
+
+    .tabs__button {
+      background-color: #fff;
+      color: #383838;
+      border-bottom: 3px solid #fff;
+      cursor: default;
+    }
+  }
+}
+
+
+/*! ===== user ===== */
+.user {
+  .tabs__button {
+    left: 310px;
+  }
+}
+
+.tabs-item__content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 900px;
+  min-height: 50px;
+  padding: 35px;
+  color: #383838;
+}
+
+.tabs__button {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 310px;
+  height: 53px;
+  line-height: 50px;
+  border: 3px solid #fae8da;
+  background-color: #fae8da;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #8c8c8f;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.user__list {
+
+}
+
+.user__item {
+  margin-top: 15px;
+}
+
+.user__item-title {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.user__item-content {
+  display: inline-block;
+  margin-left: 5px;
+
+}
+
+.user__link {
+  margin-top: 30px;
+  color: #383838;
+  border-bottom: 1px dashed #383838;
+  font-size: 14px;
+
+  &:hover {
+    border-bottom-style: solid;
+  }
+}
+
+
+/*! ===== history ===== */
+.history {
+
+}
+
+.history__list {
+  margin-top: -20px;
+}
+
+.history__item {
+  margin-top: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eae1d8;
+}
+
+.purchase {
+  color: #383838;
+  font-size: 14px;
+}
+
+.purchase__date {
+  color: #8c8c8f;
+}
+
+.purchase__list {
+
+}
+
+.purchase__item {
+  margin-top: 15px;
+}
+
+.purchase__item-name {
+  float: left;
+  width: 370px;
+}
+
+.purchase__item-amount {
+  float: left;
+  padding-left: 30px;
+}
+
+.purchase__item-sum {
+  float: right;
+  padding-right: 130px;
+}
+
+.purchase__amount-sum {
+  margin-top: 20px;
+  padding-right: 130px;
+  text-align: right;
+}
+
+.history__sum {
+  margin-top: 20px;
+  padding-right: 100px;
+  text-align: right;
+  font-weight: bold;
+}

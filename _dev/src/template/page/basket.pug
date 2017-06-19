@@ -1,0 +1,128 @@
+extends ../main
+
+block vars
+  -
+    var body_class = "basket-page"
+    var breadcrumbs = [
+                        {
+                          title: "Главная",
+                          link: "/"
+                        },
+                        {
+                          title: "Корзина"
+                        }
+                      ]
+
+block content
+
+  // ====== main content =======
+  main.main
+
+    // ====== basket =======
+    .basket
+      ._container
+        ._row
+
+          .title.basket__title Корзина
+
+          // ====== basket_left =======
+          .basket__left
+
+            ul.basket__list
+
+              li._row.basket__item
+                .basket__img-holder
+                  img.basket__img(src="img/products/product-1.jpg")
+                .basket__item-info
+                  .basket__item-name Магнолия бутон
+                  .basket__item-amount
+                    form.basket__form
+                      input(type="hidden" name="f_product" value="123")
+                      label.product__label
+                        span.product__label-text Количество:
+                        span.input-holder
+                          input.product__input(type="text" name="f_amount" value="1")
+                        span.product__label-text шт.
+                .basket__item-sum 26 грн.
+
+              li._row.basket__item
+                .basket__img-holder
+                  img.basket__img(src="img/products/product-2.jpg")
+                .basket__item-info
+                  .basket__item-name Магнолия бутон
+                  .basket__item-amount
+                    form.basket__form
+                      input(type="hidden" name="f_product" value="123")
+                      label.product__label
+                        span.product__label-text Количество:
+                        span.input-holder
+                          input.product__input(type="text" name="f_amount" value="1")
+                        span.product__label-text шт.
+                .basket__item-sum 26 грн.
+
+            ._row
+              a.basket__link.basket__link_go(href="#") Продолжить покупки
+              .basket__amount Итого: 26 грн.
+
+          // ====== basket_right =======
+          .basket__right
+            .tabs
+                ul.tabs__list
+                  li.tabs__item.tabs__item_active.user_new
+                    .tabs-item__content
+
+                      form.basket__form#form_order(novalidate)
+
+                        label.basket__label.input-holder(for="f_name")
+                          .basket__label-text ФИО
+                            span.basket__label-text_red *
+                          input.basket__input(type="text" name="f_name" id="f_name")
+
+                        label.basket__label.input-holder(for="f_email")
+                          .basket__label-text E-mail
+                            span.basket__label-text_red *
+                          input.basket__input(type="email" name="f_email" id="f_email")
+
+                        label.basket__label.input-holder(for="f_comment")
+                          .basket__label-text Комментарий к заказу
+                          input.basket__input(type="text" name="f_comment" id="f_comment")
+
+                        label.basket__label.basket__label_chbox
+                          span.filters__label-text
+                            .icon.icon-checkbox_false
+                            span.filters__label-name Не звоните мне для подтверждения заказа
+                          input.filters__input(type="checkbox" name="f_callback")
+
+                        button.button.basket__form-button(type="submit") далее
+
+                    button.tabs__button(href="#" title="История заказов") Новый пользователь
+
+                  li.tabs__item.user_exist
+                    .tabs-item__content
+                      ul.user__list
+                        li.user__item
+                          .user__item-title ФИО:
+                          .user__item-content Иванова Снежана Григорьевна
+
+                        li.user__item
+                          .user__item-title E-mail:
+                          .user__item-content ivanova_sneja_79@gmail.com
+
+                        li.user__item
+                          .user__item-title Адрес:
+                          .user__item-content г. Одесса, ул. Екатерининская, 59/2
+
+                        li.user__item
+                          .user__item-title Способ доставки:
+                          .user__item-content укрпочта
+
+                        li.user__item
+                          .user__item-title Способ оплаты:
+                          .user__item-content наложенный платёж
+
+                      a.user__link.user__link_edit(href='#' title="") Изменить данные
+
+                      .basket__button-holder
+                        a.button.basket__button(href="#") Оформить заказ
+
+                    button.tabs__button(href="#" title="Личные данные") Я уже зарегистрирован

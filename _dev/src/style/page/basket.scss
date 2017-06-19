@@ -1,0 +1,178 @@
+
+
+/*! ===== basket ===== */
+.basket {
+  .basket__link_go {
+    float: left;
+  }
+
+  .basket__amount {
+    float: right;
+  }
+
+  .tabs-item__content {
+    width: 100%;
+  }
+
+  .tabs {
+    margin-top: 50px;
+  }
+
+  .tabs__button {
+    width: 50%;
+  }
+
+  .basket__button-holder {
+    text-align: left;
+  }
+}
+
+.basket__left {
+  float: left;
+  width: 50%;
+  padding: 0 15px;
+  margin-top: 50px;
+}
+
+.basket__right {
+  float: right;
+  width: 50%;
+  padding: 0 15px;
+  margin-top: 50px;
+}
+
+.basket__item {
+  padding: 20px 0;
+  padding-right: 100px;
+  border-bottom: 1px solid #eae1d8;
+  color: #383838;
+}
+
+.basket__img-holder {
+  position: relative;
+  float: left;
+  width: 87px;
+  height: 87px;
+  overflow: hidden;
+}
+
+.basket__img {
+  @include center-translate();
+}
+
+.basket__item-info {
+  float: left;
+  padding-left: 30px;
+}
+
+.basket__item-name {
+  text-transform: uppercase;
+}
+
+.basket__item-amount {
+  margin-top: 30px;
+}
+
+.basket__item-sum {
+  float: right;
+}
+
+.basket__amount {
+  margin-top: 20px;
+  padding-right: 100px;
+  text-align: right;
+}
+
+.basket__button-holder {
+  text-align: center;
+}
+
+.basket__button {
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 35px;
+  color: #383838;
+  font-size: 14px;
+}
+
+.basket__link_go {
+  margin-top: 30px;
+  color: #383838;
+  border-bottom: 1px dashed #383838;
+  font-size: 14px;
+
+  &:hover {
+    color: #000;
+    border-bottom-style: solid;
+  }
+}
+
+
+.user_new {
+
+}
+
+.user_exist {
+  .tabs__button {
+    left: 50%;
+  }
+}
+
+.basket__label {
+  display: block;
+  margin-top: 15px;
+
+  &_chbox {
+    @extend .filters__label;
+    font-size: 14px;
+  }
+}
+
+.basket__input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+.basket__label-text {
+  font-size: 15px;
+}
+
+.basket__label-text_red {
+  margin-left: 5px;
+  color: #f00;
+}
+
+.basket__form-button {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+
+/*! ===== basket_modal ===== */
+.basket_modal {
+  padding: 0;
+  padding-bottom: 35px;
+
+  .basket__title {
+    background-color: #ffe7dc;
+    text-align: center;
+    padding: 10px 15px;
+    font: 28px $Lobster;
+    color: $grey;
+    border-bottom: 7px solid #ff954f;
+  }
+
+  .basket__content {
+    padding: 0 35px;
+  }
+
+  .basket__list {
+    margin-top: 50px;
+  }
+
+}
+

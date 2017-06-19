@@ -109,11 +109,11 @@ $(function () {
   	]
   });
 	
-	//
+	// check on checkboxes
 	$(".filters__input").on("change", function (e) {
 		var $this = $(this),
 			checked = $this.is(':checked'),
-			$item = $this.parents(".filters__item"),
+			$item = $this.parents("label"),
 			$icon = $item.find(".icon");
 
 		if( checked ) {
@@ -140,6 +140,18 @@ $(function () {
 		});
 
 	});
+
+	//open tab in cabinet
+  $(".tabs__button").click(function () {
+    var $this = $(this),
+        $tab = $this.parent(),
+        $tabs = $(".tabs__item");
+
+    if( !$tab.hasClass('tabs__item_active') ) {
+      $tabs.removeClass('tabs__item_active');
+      $tab.addClass('tabs__item_active');
+    }
+  });
 
 	//
 

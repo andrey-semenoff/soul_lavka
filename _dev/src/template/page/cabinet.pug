@@ -1,24 +1,99 @@
 extends ../main
 
 block vars
-	-
-		var body_class = "cabinet-page"
-		var breadcrumbs = [
-												{
-													title: "Главная",
-													link: "/"
-												},
-												{
-													title: "Личный кабинет"
-												}
-											]
+  -
+    var body_class = "cabinet-page"
+    var breadcrumbs = [
+    {
+    title: "Главная",
+    link: "/"
+    },
+    {
+    title: "Личный кабинет"
+    }
+    ]
 
 block content
-	// ====== main content =======
-	main.main
+  // ====== main content =======
+  main.main
 
-		// ====== cabinet =======
-		.cabinet
-			._container
+    // ====== cabinet =======
+    .cabinet
+      ._container
 
-				.title.cabinet__title Личный кабинет
+        .title.cabinet__title Личный кабинет
+
+        .tabs
+          ul.tabs__list
+            li.tabs__item.tabs__item_active.history
+              .tabs-item__content
+                ul.history__list
+
+                  li.history__item.purchase
+                    .purchase__date 22 января 2017
+
+                    ul.purchase__list
+                      li.purchase__item._row
+                        .purchase__item-name Магнолия бутон
+                        .purchase__item-amount Количество: 25 шт.
+                        .purchase__item-sum 25 грн.
+                      li.purchase__item._row
+                        .purchase__item-name Магнолия бутон
+                        .purchase__item-amount Количество: 25 шт.
+                        .purchase__item-sum 25 грн.
+                      li.purchase__item._row
+                        .purchase__item-name Магнолия бутон
+                        .purchase__item-amount Количество: 25 шт.
+                        .purchase__item-sum 25 грн.
+
+                    .purchase__amount-sum Итого: 75 грн.
+
+                  li.history__item.purchase
+                    .purchase__date 22 января 2017
+
+                    ul.purchase__list
+                      li.purchase__item._row
+                        .purchase__item-name Магнолия бутон
+                        .purchase__item-amount Количество: 25 шт.
+                        .purchase__item-sum 25 грн.
+                      li.purchase__item._row
+                        .purchase__item-name Магнолия бутон
+                        .purchase__item-amount Количество: 25 шт.
+                        .purchase__item-sum 25 грн.
+                      li.purchase__item._row
+                        .purchase__item-name Магнолия бутон
+                        .purchase__item-amount Количество: 25 шт.
+                        .purchase__item-sum 25 грн.
+
+                    .purchase__amount-sum Итого: 75 грн.
+
+                .history__sum Всего покупок на сумму: 150 грн.
+
+              button.tabs__button(href="#" title="История заказов") История заказов
+
+            li.tabs__item.user
+              .tabs-item__content
+                ul.user__list
+                  li.user__item
+                    .user__item-title ФИО:
+                    .user__item-content Иванова Снежана Григорьевна
+
+                  li.user__item
+                    .user__item-title E-mail:
+                    .user__item-content ivanova_sneja_79@gmail.com
+
+                  li.user__item
+                    .user__item-title Адрес:
+                    .user__item-content г. Одесса, ул. Екатерининская, 59/2
+
+                  li.user__item
+                    .user__item-title Способ доставки:
+                    .user__item-content укрпочта
+
+                  li.user__item
+                    .user__item-title Способ оплаты:
+                    .user__item-content наложенный платёж
+
+                a.user__link.user__link_edit(href='#' title="") Изменить данные
+
+              button.tabs__button(href="#" title="Личные данные") Личные данные
