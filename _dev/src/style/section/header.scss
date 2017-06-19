@@ -141,6 +141,18 @@ header.header {
 
 .header-basket {
   float: right;
+  display: inline-block;
+  color: $grey;
+  border: none;
+  background: none;
+
+  &:not([disabled]) {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .header-basket__content {

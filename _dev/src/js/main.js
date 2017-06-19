@@ -124,6 +124,25 @@ $(function () {
 			$icon.removeClass("icon-checkbox_true").addClass("icon-checkbox_false");
 		}
 	});
+
+  //open basket modal
+	$(".header-basket").on("click", function () {
+
+		var $basket = $(".modal.basket");
+
+		$basket.on($.modal.BLOCK, function(e) {
+			$('body').css({
+				'overflow-y': 'scroll'
+			});
+		})
+		.modal({
+			fadeDuration: 500
+		});
+
+	});
+
+	//
+
 });
 
 

@@ -1,0 +1,24 @@
+extends ../main
+
+block vars
+	-
+		var body_class = "cabinet-page"
+		var breadcrumbs = [
+												{
+													title: "Главная",
+													link: "/"
+												},
+												{
+													title: "Личный кабинет"
+												}
+											]
+
+block content
+	// ====== main content =======
+	main.main
+
+		// ====== cabinet =======
+		.cabinet
+			._container
+
+				.title.cabinet__title Личный кабинет

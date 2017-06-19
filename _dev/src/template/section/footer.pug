@@ -57,9 +57,57 @@ footer.footer
 					a.copyright__link(href="http://skylogic.com.ua" title="skylogic.com.ua") Разработка сайта
 
 
+// ====== modals =======
+
+// ====== modal basket =======
+.modal.basket
+	.basket__title Корзина
 
 
-// ====== scripts ======= 
+
+
+	.basket__content
+
+		ul.basket__list
+
+			li._row.basket__item
+				.basket__img-holder
+					img.basket__img(src="img/products/product-1.jpg")
+				.basket__item-info
+					.basket__item-name Магнолия бутон
+					.basket__item-amount
+						form.basket__form
+							input(type="hidden" name="f_product" value="123")
+							label.product__label(for="f_amount")
+								span.product__label-text Количество:
+								span.input-holder
+									input.product__input(type="text" name="f_amount" id="f_amount" value="1")
+								span.product__label-text шт.
+				.basket__item-sum 26 грн.
+
+			li._row.basket__item
+				.basket__img-holder
+					img.basket__img(src="img/products/product-2.jpg")
+				.basket__item-info
+					.basket__item-name Магнолия бутон
+					.basket__item-amount
+						form.basket__form
+							input(type="hidden" name="f_product" value="123")
+							label.product__label(for="f_amount")
+								span.product__label-text Количество:
+								span.input-holder
+									input.product__input(type="text" name="f_amount" id="f_amount" value="1")
+								span.product__label-text шт.
+				.basket__item-sum 26 грн.
+
+		.basket__amount Итого: 26 грн.
+
+		.basket__button-holder
+			a.button.basket__button(href="#") Оформить заказ
+
+		.basket__button-holder
+			a.basket__link.basket__link_go(href="#") Продолжить покупки
+// ====== scripts =======
 // Start Google analytics 
 //script.
 // End Google analytics 
